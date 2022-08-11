@@ -10,6 +10,14 @@ host_ip = socket.gethostbyname(host_name)
 print("Cyber Terminal [Version 1.00]")
 while True:
 	code = input(">>> ")
+	if code == "help":
+		print("help: this message")
+		print("ping: pings a website")
+		print("local: prints your ip")
+		print("date: outputs the current date"
+		print("list: listss files in a directory. Lists all with -a")
+		print("echo me: outputs what you tell it to do")
+		      # sorry if it's long, the other option is all in one print message
 	if code == 'ping':
 		host = input("Enter Website To Ping: ")
 		number = input("Enter How Many Times To Ping: ")
@@ -35,3 +43,4 @@ while True:
 		print(dir_list2)
 	if code == 'echo me':
 		echo = input("What Do You Want Me To Echo: ")
+		print(echo)
